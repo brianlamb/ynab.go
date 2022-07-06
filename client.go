@@ -45,7 +45,6 @@ func NewClient(accessToken string) ClientServicer {
 		accessToken: accessToken,
 		client:      http.DefaultClient,
 	}
-
 	c.user = user.NewService(c)
 	c.budget = budget.NewService(c)
 	c.account = account.NewService(c)

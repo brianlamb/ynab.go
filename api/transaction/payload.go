@@ -39,4 +39,5 @@ type PayloadTransaction struct {
 	// was imported and had the same date and same amount, its import_id would
 	// be 'YNAB:-294230:2015-12-30:2’.
 	ImportID *string `json:"import_id"`
+	SubTransaction []*SubTransaction `json:"subtransactions"`
 }
